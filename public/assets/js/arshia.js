@@ -333,9 +333,15 @@ function sliderOwlCarousel(){
         $('.owl-item.active .hero-slide').addClass("zoom");
     });
 
-    $(".carousel-imgs").owlCarousel({ 
+    $(".carousel-imgs .owl-carousel").owlCarousel({
         loop: true,
-        items: 1
+        items: 1,
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+        ],
+        navContainer: '.main-content .custom-nav'
     });
 }
 
