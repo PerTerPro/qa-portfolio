@@ -332,6 +332,11 @@ function sliderOwlCarousel(){
     $('#hero-slider').on("translated.owl.carousel", function(){
         $('.owl-item.active .hero-slide').addClass("zoom");
     });
+
+    $(".carousel-imgs").owlCarousel({ 
+        loop: true,
+        items: 1
+    });
 }
 
 /*-------------------------
